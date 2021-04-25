@@ -1,0 +1,50 @@
+
+var image = 0
+onEvent("image2", "click", function( ) {
+hideElement("image2");	
+image = image+1
+console.log("image2 clicked!");
+
+});
+onEvent("image3", "click", function( ) {
+	hideElement("image3");
+	image=image+1
+	console.log("image3 clicked!");
+	
+	
+});
+
+
+
+onEvent("image1", "click", function( ) {
+	hideElement("image1");
+	image= image+1
+	console.log("image1 clicked!");
+});
+onEvent("image4", "click", function( ) {
+	hideElement("image4");
+	image= image+1
+	console.log("image4 clicked!");
+});
+onEvent("image6", "click", function( ) {
+  hideElement("image6");
+  image= image+1
+	console.log("image6 clicked!");
+});
+onEvent("image5", "click", function( ) {
+	hideElement("image5");
+	image = image+1
+
+	console.log("image5 clicked!");
+});
+
+
+
+
+
+  
+onEvent("button", "click", function( ) {
+	console.log("button clicked!");
+	open("https://snugpiglet9.qoom.space/SHS%20HACKS%20QOOM%201/oceanPollution.html");
+
+});
