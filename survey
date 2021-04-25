@@ -1,0 +1,116 @@
+print("Hello! Sapple is very excited to hear your interest in our")
+print("volunteer-organzing pairing form. We will ask you a series")
+print("of questions to seemlessly connect you with your perfect")
+print("organization; to jumpstart your volunteer journey.")
+
+print("----------------------------------------------------------")
+
+#Write what are the 4 organizations we are using
+#A = The Arbor Day Foundation
+#B = Bahamas Plastic Movement
+#C = Ocean Conservancy
+#D = Conservation International
+shouldContinue = True
+while(shouldContinue):
+    print("What are your interests?")
+    print("A: Deforestation")
+    print("B: Water Pollution") 
+    print("C: Sealife")
+    print("D: Restoration")
+    
+    interest1 = input("Please enter your interest (A, B, C, D): ")
+    
+    if (interest1 == "A" or interest1 == "a"):
+        print("Does any of the following interest you?")
+        print("Donating")
+        print("Fundraising")
+        print("Hands-On Work")
+        print("Tree Recovery")
+        choiceA1 = input("Please enter if any of these interest you (Y/N): ")
+        if (choiceA1 == "Y" or choiceA1 == "y"):
+            print("Please visit the following website and confirm your interest")
+            print("https://tinyurl.com/hxssmntd")
+            print("Do you like the Arbor Day Foundation?")
+            choiceA2 = input("Please enter Y/N: ")
+            if ("y" or "Y"):
+                print("Congratulations! You have successfully been paired") 
+                print("with the Arbor Day Foundation! We look forward to the")
+                print("meaningful changes you make in the world!")
+                shouldContinue = False
+            else:
+                print("Please retake the survey.")
+        else:
+             print("Please retake the survey.")
+             
+             
+        
+    elif (interest1 =="B" or interest1 =="b"):
+        print("Does any of the following interest you?")
+        print("Donating")
+        print("Outreach")
+        print("Gaining Service Hours")
+        print("Leading Projects")
+        choiceB1 = input("Please enter if any of these interest you (Y/N): ")
+        if (choiceB1 == "Y" or choiceB1 == "y"):
+            print("Please visit the following website and confirm your interest.")
+            print("https://tinyurl.com/mavh2rbd")
+            print("Do you like the Bahamas Plastic Movement?")
+            choiceB2 = input("Please enter Y/N: ")
+            if (choiceB2 == "y" or choiceB2 == "Y"):
+                print("Congratulations! You have successfully been paired") 
+                print("with the Bahamas Plastic Movement! We look forward to the")
+                print("meaningful changes you make in the world!")
+                shouldContinue = False
+            else:
+                print("Please retake the survey.")
+        else:
+            print("Please retake the survey.")
+            
+    elif (interest1 =="C" or interest1 =="c"):
+        print("Does any of the following interest you?")
+        print("Become an ocean advocate")
+        print("Protect wildlife")
+        print("Protect the artic")
+        print("Confront climate change")
+        choiceC1 = input("Please enter if any of these interest you (Y/N): ")
+        if (choiceC1 == "Y" or choiceC1 == "y"):
+                print("Please visit the following website and confirm your interest.")
+                print("https://tinyurl.com/cdphd335")
+                choiceC2 = input("Please enter Y/N: ")
+                if (choiceC2 == "y" or choiceC2 == "Y"):
+                    print("Congratulations! You have successfully been paired") 
+                    print("with Ocean Conservancy! We look forward to the")
+                    print("meaningful changes you make in the world!")
+                    shouldContinue = False
+                else:
+                    print("Please retake the survey.")
+        else:
+            print("Please retake the survey.")
+
+    elif (interest1 =="D" or interest1 =="d"):
+        print("Does any of the following interest you?")
+        print("Protect nature for climate")
+        print("Ocean conservation at scale")
+        print("Sustainable lands and waters")
+        print("Blue Nature Alliance")
+        choiceD1 = input("Please enter if any of these interest you (Y/N): ")
+        if (choiceD1 == "Y" or choiceD1 == "y"):
+                print("Please visit the following website and confirm your interest.")
+                print ("https://tinyurl.com/37hy7sjn")
+                choiceD2 = input("Please enter Y/N: ")
+                if (choiceD2 == "y" or choiceD2 == "Y"):
+                    print("Congratulations! You have successfully been paired") 
+                    print("with Ocean Conservancy! We look forward to the")
+                    print("meaningful changes you make in the world!")
+                    shouldContinue = False
+                else:
+                    print("Please retake the survey.")
+                
+        else:
+            print("Please retake the survey.")
+
+
+
+
+#ask three questions then if they answer positively to all three 
+#give them website and ask them to confirm whic hone they like best
