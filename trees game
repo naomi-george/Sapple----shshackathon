@@ -1,0 +1,24 @@
+var treesPlanted = 1; 
+var oxygenPerClick = 260; 
+var treeCounter = 0; 
+
+
+onEvent("tree", "click", function( ) {
+  treeCounter = treeCounter + treesPlanted;
+  console.log(treesPlanted);
+  oxygenPerClick = treesPlanted*oxygenPerClick;
+  setText("treeText", "text: " + treesPlanted);
+  setScreen("treeScreen");  
+  setText("treesPlanted", "You planted " + treeCounter + " tree(s).");
+  setText("treeText", "This produces " + oxygenPerClick + " pound(s) of oxygen, per year.");
+  
+  if (treesPlanted <=10) {
+   hideElement("treeInstructions");
+  }
+  
+  setScreen("final");
+  
+  setScreen("qoom");
+  open("https://snugpiglet9.qoom.space/SHS%20HACKS%20QOOM%201/trees.html");
+
+});
